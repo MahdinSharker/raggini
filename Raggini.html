@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Raggini ♡ A Proposal from Mahdin</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --pink: #ffb6ce;
+  --rose: #ed6698;
+  --purple: #a58bff;
+  --ink: #49334e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--ink);
+  background: linear-gradient(135deg, #fff0f6, #f3edff, #fff5ed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.heart {
+  position: fixed;
+  bottom: -40px;
+  pointer-events: none;
+  opacity: 0;
+  animation: floatUp 8s linear infinite;
+  z-index: 0;
+}
+
+@keyframes floatUp {
+  10% { opacity: .65; }
+  100% {
+    transform: translateY(-115vh) rotate(35deg);
+    opacity: 0;
+  }
+}
+
+.card {
+  width: 100%;
+  max-width: 620px;
+  padding: 40px 28px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,.9);
+  background: rgba(255,255,255,.83);
+  backdrop-filter: blur(18px);
+  border-radius: 30px;
+  box-shadow: 0 25px 80px rgba(130,92,150,.15);
+  position: relative;
+  z-index: 1;
+  animation: appear 1s ease both;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.eyebrow {
+  color: #c05d8a;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.flower {
+  font-size: 52px;
+  margin: 20px 0 12px;
+  animation: sway 3s ease-in-out infinite;
+}
+
+@keyframes sway {
+  50% { transform: rotate(8deg) scale(1.06); }
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(34px, 8vw, 49px);
+  line-height: 1.16;
+  margin: 12px 0;
+  font-weight: 500;
+  color: #794c78;
+}
+
+h1 span {
+  color: #ef709f;
+}
+
+.subtitle {
+  color: #9c7897;
+  font-size: 14px;
+  margin-bottom: 26px;
+  line-height: 1.7;
+}
+
+.note {
+  background: linear-gradient(135deg, #fff5f8, #f7f2ff);
+  border: 1px solid #f5ddeb;
+  border-radius: 20px;
+  padding: 24px;
+  text-align: left;
+  line-height: 1.9;
+  font-size: 14px;
+  color: #634c67;
+}
+
+.note p {
+  margin: 0 0 14px;
+}
+
+.note p:last-child {
+  margin-bottom: 0;
+}
+
+.signature {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 19px;
+  color: #d35e93;
+  margin-top: 22px;
+  text-align: right;
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  padding: 14px 20px;
+  font: 600 14px 'DM Sans', sans-serif;
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px #e8bfd5;
+}
+
+button:focus-visible {
+  outline: 3px solid #a58bff;
+  outline-offset: 4px;
+}
+
+.primary {
+  color: white;
+  background: linear-gradient(100deg, #f47ca8, #a68bfa);
+}
+
+.secondary {
+  background: white;
+  color: #a45b85;
+  border: 1px solid #efd6e6;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+#proposal,
+#response {
+  display: none;
+}
+
+.proposal-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(25px, 6vw, 34px);
+  line-height: 1.45;
+  color: #a04f82;
+  margin: 18px 0;
+}
+
+.message {
+  font-size: 14px;
+  line-height: 1.9;
+  color: #806780;
+}
+
+.result {
+  margin-top: 22px;
+  padding: 20px;
+  border-radius: 18px;
+  background: #fff0f6;
+  line-height: 1.8;
+  animation: appear .5s ease;
+  font-size: 14px;
+}
+
+.footer {
+  margin-top: 28px;
+  font-size: 11px;
+  color: #b69bb6;
+  letter-spacing: .5px;
+}
+
+.small-note {
+  margin-top: 15px;
+  color: #a18ba2;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+@media (max-width: 450px) {
+  .card { padding: 30px 18px; }
+  .note { padding: 19px; }
+  button { padding: 13px 16px; }
+}
+</style>
+</head>
+
+<body>
+
+<main class="card">
+
+  <section id="intro">
+    <div class="eyebrow">A special message from my heart</div>
+
+    <div class="flower">🌷</div>
+
+    <h1>Dear Raggini,<br><span>My Pakhi Moni</span> ♡</h1>
+
+    <div class="subtitle">
+      One unexpected meeting, one little argument,
+      and a feeling I wanted to share with you. 💌
+    </div>
+
+    <div class="note">
+      <p>Dear Pakhi Moni,</p>
+
+      <p>
+        Do you remember our first meeting on Adda?
+        It started with a little argument 😂, and I even
+        called you <strong>“Raggini.”</strong>
+        Maybe that was an unusual beginning, but sometimes
+        unexpected moments make the sweetest memories.
+      </p>
+
+      <p>
+        If my teasing upset you, I am genuinely sorry.
+        I never wanted to hurt your feelings. I would much
+        rather make you smile than make you angry. 🌷
+      </p>
+
+      <p>
+        We have only just met, so I know that we still have
+        a lot to learn about each other. I don't want to
+        pretend that I already know everything about you.
+        Instead, I want the chance to discover the person
+        behind your smile, your thoughts, your dreams,
+        and your beautiful personality.
+      </p>
+
+      <p>
+        <strong>And now, let me tell you my real intention.</strong>
+        I am not writing this only to ask for friendship.
+        I am writing because I feel curious about you in a
+        more romantic way, and I would like to explore whether
+        we could build something serious and meaningful together.
+      </p>
+
+      <p>
+        I believe that a lasting relationship should be built
+        on honesty, trust, respect, understanding, and care.
+        If our feelings grow naturally and we discover that
+        we are right for each other, my intention would be
+        to pursue a committed relationship that could
+        eventually lead to marriage. 💍
+      </p>
+
+      <p>
+        I know that marriage is a big word, especially when
+        two people have only just met. I am not asking you
+        to make such a big decision today. I am asking for
+        an opportunity to get to know each other with serious
+        intentions and see whether our hearts can choose
+        the same future.
+      </p>
+
+      <p>
+        I will respect your feelings and your decision,
+        whatever your answer may be. Your happiness matters,
+        and I want you to feel comfortable being honest with me.
+      </p>
+
+      <p>
+        So, Pakhi Moni, may I have the chance to know you
+        not only as a friend, but as someone who could
+        become a special person in my life? ❤️
+      </p>
+
+      <div class="signature">
+        With sincere feelings,<br>
+        SM Mahdin Sharker ♡
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="primary" onclick="openProposal()">
+        Read My Heart's Question 💌
+      </button>
+    </div>
+  </section>
+
+  <section id="proposal">
+    <div class="flower">💗</div>
+    <div class="eyebrow">A question from my heart</div>
+
+    <div class="proposal-title">
+      Pakhi Moni, would you give us a chance to explore
+      a serious romantic relationship that could lead
+      to marriage someday? 💍
+    </div>
+
+    <p class="message">
+      I am not asking you to promise me forever today.
+      I am asking whether you would be willing to take
+      the first step with me, learn about each other,
+      and see whether we might have a beautiful future together.
+    </p>
+
+    <p style="font-size:14px;color:#d46d9c">
+      Your honest answer means a lot to me. 🌸
+    </p>
+
+    <div class="actions">
+      <button class="primary" onclick="answer('yes')">
+        Yes, let's explore this ❤️
+      </button>
+
+      <button class="secondary" onclick="answer('time')">
+        I need some time 🌷
+      </button>
+
+      <button class="secondary" onclick="answer('no')">
+        I don't feel the same 💗
+      </button>
+    </div>
+
+    <div class="small-note">
+      Every answer is okay. There is no pressure,
+      and your choice will be respected.
+    </div>
+
+    <div class="actions">
+      <button class="secondary" onclick="goBack()">
+        ← Read my letter again
+      </button>
+    </div>
+  </section>
+
+  <section id="response">
+    <div class="flower" id="responseFlower">💌</div>
+    <div class="eyebrow">Your feelings matter</div>
+
+    <div class="proposal-title" id="responseTitle"></div>
+
+    <p class="message" id="responseMessage"></p>
+
+    <div class="actions">
+      <button class="primary" id="emailButton" onclick="emailAnswer()">
+        Send Your Answer to Mahdin 📩
+      </button>
+    </div>
+
+    <p class="small-note">
+      This opens your email app with your answer prepared.
+      Please press Send to email Mahdin.
+    </p>
+
+    <div class="actions">
+      <button class="secondary" onclick="goBack()">
+        ← Back to the letter
+      </button>
+    </div>
+  </section>
+
+  <div class="footer">
+    MADE WITH LOVE BY SM MAHDIN SHARKER ♡
+  </div>
+
+</main>
+
+<script>
+const recipient = "smmahdinsharkar@gmail.com";
+
+let selectedAnswer = null;
+
+const responses = {
+  yes: {
+    flower: "🥹💖",
+    title: "You have made me smile!",
+    message:
+      "Thank you for being open to this possibility. " +
+      "Let's take our time, talk honestly, learn about each other, " +
+      "and see whether we can build a loving relationship " +
+      "with a shared future in mind. One beautiful step at a time. 💍",
+    emailSubject: "My Answer to Your Proposal ❤️",
+    emailBody:
+      "Dear Mahdin,\n\n" +
+      "My answer is YES. ❤️\n\n" +
+      "I am willing to get to know you romantically and " +
+      "explore whether we could build a serious relationship together.\n\n" +
+      "Let's take things one step at a time.\n\n" +
+      "With love,\nPakhi Moni"
+  },
+
+  time: {
+    flower: "🌷",
+    title: "Take all the time you need.",
+    message:
+      "Thank you for being honest with me. You don't have to " +
+      "rush your feelings or make a decision before you are ready. " +
+      "I respect your pace, and I want you to feel comfortable.",
+    emailSubject: "I Need Some Time 🌷",
+    emailBody:
+      "Dear Mahdin,\n\n" +
+      "Thank you for sharing your feelings with me.\n\n" +
+      "I need some time to think about your proposal. " +
+      "I hope we can communicate honestly and without pressure.\n\n" +
+      "Best wishes,\nPakhi Moni"
+  },
+
+  no: {
+    flower: "🤍",
+    title: "Thank you for telling me honestly.",
+    message:
+      "I respect your feelings and your decision. " +
+      "You don't owe me a romantic relationship, and I won't " +
+      "pressure you to change your mind. I genuinely wish you happiness.",
+    emailSubject: "My Honest Answer 🤍",
+    emailBody:
+      "Dear Mahdin,\n\n" +
+      "Thank you for your kind message and for being honest " +
+      "about your intentions.\n\n" +
+      "I don't feel the same way romantically, and I hope " +
+      "you can respect my decision.\n\n" +
+      "I wish you all the best,\nPakhi Moni"
+  }
+};
+
+function openProposal() {
+  document.getElementById("intro").style.display = "none";
+  document.getElementById("response").style.display = "none";
+  document.getElementById("proposal").style.display = "block";
+}
+
+function answer(choice) {
+  selectedAnswer = choice;
+
+  const response = responses[choice];
+
+  document.getElementById("proposal").style.display = "none";
+  document.getElementById("intro").style.display = "none";
+  document.getElementById("response").style.display = "block";
+
+  document.getElementById("responseFlower").textContent = response.flower;
+  document.getElementById("responseTitle").textContent = response.title;
+  document.getElementById("responseMessage").textContent = response.message;
+
+  burstHearts();
+
+  document.getElementById("response").scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+}
+
+function emailAnswer() {
+  if (!selectedAnswer) return;
+
+  const response = responses[selectedAnswer];
+
+  const subject = encodeURIComponent(response.emailSubject);
+  const body = encodeURIComponent(response.emailBody);
+
+  const mailto =
+    "mailto:" + recipient +
+    "?subject=" + subject +
+    "&body=" + body;
+
+  window.location.href = mailto;
+}
+
+function goBack() {
+  document.getElementById("intro").style.display = "block";
+  document.getElementById("proposal").style.display = "none";
+  document.getElementById("response").style.display = "none";
+}
+
+function burstHearts() {
+  for (let i = 0; i < 18; i++) {
+    setTimeout(() => {
+      const heart = document.createElement("div");
+
+      heart.textContent =
+        ["💗", "💕", "♡", "✨"][Math.floor(Math.random() * 4)];
+
+      heart.style.cssText = `
+        position: fixed;
+        left: ${Math.random() * 100}%;
+        top: ${40 + Math.random() * 40}%;
+        font-size: ${18 + Math.random() * 20}px;
+        pointer-events: none;
+        z-index: 10;
+        transition: transform 2s ease, opacity 2s ease;
+      `;
+
+      document.body.appendChild(heart);
+
+      requestAnimationFrame(() => {
+        heart.style.transform =
+          `translateY(-${100 + Math.random() * 220}px) rotate(25deg)`;
+        heart.style.opacity = "0";
+      });
+
+      setTimeout(() => heart.remove(), 2200);
+    }, i * 70);
+  }
+}
+
+// Floating hearts in the background
+for (let i = 0; i < 16; i++) {
+  const heart = document.createElement("div");
+
+  heart.className = "heart";
+  heart.textContent = ["♡", "♥", "✧"][i % 3];
+  heart.style.left = Math.random() * 100 + "%";
+  heart.style.animationDelay = Math.random() * 8 + "s";
+  heart.style.animationDuration = (6 + Math.random() * 7) + "s";
+  heart.style.fontSize = (14 + Math.random() * 22) + "px";
+  heart.style.color = i % 2 ? "#ed9bbd" : "#b7a1f7";
+
+  document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
